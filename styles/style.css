@@ -175,10 +175,7 @@ footer img {
 /* ----------------------
     Media Queries
 -------------------------*/
-@media screen and (max-width:688px) {
-    header {
-        margin: 0;
-    }
+@media screen and (max-width: 600px) {
     .nav-links a {
         display: none;
     }
@@ -209,5 +206,33 @@ footer img {
     }
     .section-title, .newsletter-area h1, .hightlight-info h1 {
         font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px){
+    .nav-links a {
+        display: none;
+    }
+    .nav-links #mobile-menu {
+        display: block;
+    }
+    .header-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .banner-text, .banner-image, .hightlight-info, .hightlight-cover {
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .hightlight-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .matches {
+        grid-template-columns: 1fr;
     }
 }
