@@ -61,6 +61,11 @@ nav a, .banner-text a, #email-submit, .hightlight-info a, .match a {
 }
 .banner-image img {
     width: 90%;
+    transition: transform 0.5s ease-in;
+}
+.banner-image:hover img {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in;
 }
 
 /* Players Area Styles */
