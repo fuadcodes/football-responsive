@@ -30,6 +30,9 @@ nav a, .banner-text a, #email-submit, .hightlight-info a, .match a {
 .nav-links a {
     margin-right: 36px;
 }
+.nav-links #mobile-menu {
+    display: none;
+}
 .nav-links a:hover {
     color: #E02C6D;
 }
@@ -166,4 +169,45 @@ footer {
 }
 footer img {
     width: 40%;
+}
+
+
+/* ----------------------
+    Media Queries
+-------------------------*/
+@media screen and (max-width:688px) {
+    header {
+        margin: 0;
+    }
+    .nav-links a {
+        display: none;
+    }
+    .nav-links #mobile-menu {
+        display: block;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .header-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+    .banner-text, .banner-image, .hightlight-info, .hightlight-cover {
+        width: 100%;
+    }
+    .players {
+        grid-template-columns: 1fr;
+    }
+    .hightlight-area {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .matches {
+        grid-template-columns: 1fr;
+    }
+    .section-title, .newsletter-area h1, .hightlight-info h1 {
+        font-size: 30px;
+    }
 }
