@@ -161,6 +161,9 @@ footer {
     align-items: center;
     row-gap: 20px;
 }
+.social-icons a {
+    color: #000000;
+}
 .social-icons i{
     padding: 10px;
     background-color: lightgrey;
